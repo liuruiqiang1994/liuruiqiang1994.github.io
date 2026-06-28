@@ -75,6 +75,21 @@
       margin-bottom: 32px;
       animation: fadeUp 0.8s ease both;
     }
+    .hero-avatar {
+      width: 140px; height: 140px;
+      border-radius: 50%;
+      border: 3px solid var(--accent);
+      box-shadow: 0 0 40px rgba(200,255,0,0.25), 0 8px 30px rgba(0,0,0,0.5);
+      margin-bottom: 32px;
+      background: #141414;
+      object-fit: cover;
+      animation: fadeUp 0.8s ease both;
+      transition: transform 0.4s, box-shadow 0.4s;
+    }
+    .hero-avatar:hover {
+      transform: scale(1.05) rotate(-3deg);
+      box-shadow: 0 0 60px rgba(200,255,0,0.4), 0 12px 40px rgba(0,0,0,0.6);
+    }
     .hero-badge .dot {
       width: 6px; height: 6px;
       background: var(--accent);
@@ -250,6 +265,7 @@
 
 <!-- Hero -->
 <section class="hero">
+  <img class="hero-avatar" src="avatar.png" alt="刘瑞强" />
   <div class="hero-badge">
     <span class="dot"></span>
     在线 · 厦门
